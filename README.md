@@ -1,7 +1,8 @@
 # AI_trainer
 AI_trainer focuses on counting the number of curls done by an individual.
 - It takes the angle formed by the right hand for calculations. 
-- Used OpenCv,MediaPipe along with python
+- Used OpenCV,MediaPipe along with python
+- We will use the pose estimation running on the CPU to find the correct points and using these points we will get the desired angles. Then based on these angles we can find many gestures including the number of biceps curls
 # DEMO
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/93571457/191872646-829c3dae-6b2d-4010-8fb0-821b9ddaf55e.gif)
@@ -20,4 +21,4 @@ AI_trainer focuses on counting the number of curls done by an individual.
 With the help of the MediaPipe framework, an impressive ML pipeline can be built for instance of inference models
 like TensorFlow, TFLite, and also for media processing functions.
 
-We will use the pose estimation running on the CPU to find the correct points and using these points we will get the desired angles. Then based on these angles we find many gestures including the number of biceps curls
+
