@@ -18,7 +18,7 @@ AI_trainer focuses on counting the number of curls done by an individual.
  _MediaPipe and OpenCV_ :to gather data about the various joints in our body such as our wrists, shoulders, etc. for making our
 calculation with angles possible to count our repetitions with heavier weights, _NumPy_ : It will help us with our trigonometry to calculate the angles
 ### - Make Detections
-To make our detections possible, firstly we need to recolor our image because OpenCV renders the RGB image to
+To make the detections possible, we need to recolor our image because OpenCV renders the RGB image to
 BGR color format but for MediaPipe to work, we need to convert our BGR image back to RGB. Print the
 detections of our model. Lastly change the color format back to BGR format as OpenCV runs on BGR format, and
 then we can start rendering our detections
@@ -33,6 +33,12 @@ which are 12, 14 and 16 respectively
 ### - Calculating Angles 
 First we get the coordinates of the threejoints which we require to get the angle calculated. Then we can calculate
 the slopes of the joints using NumPy. Angles are calculated in radians which then can be converted into degrees
+
+## Reference
+- https://google.github.io/mediapipe/
+- https://google.github.io/mediapipe/solutions/pose.html
+- https://github.com/google/mediapipe/tree/master/mediapipe
+- http://www.ijaresm.com/ai-personal-trainer-using-opencv-and-python
 
 
 
