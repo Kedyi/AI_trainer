@@ -21,18 +21,18 @@ calculation with angles possible to count our repetitions with heavier weights, 
 To make the detections possible, we need to recolor our image because OpenCV renders the RGB image to
 BGR color format but for MediaPipe to work, we need to convert our BGR image back to RGB. Print the
 detections of our model. Lastly change the color format back to BGR format as OpenCV runs on BGR format, and
-then we can start rendering our detections
+then we can start rendering our detections.
 
 ### - Determining Joints
 There are 33 landmarks in total, starting from index 0. These represent the different joints within the pose, , if
 we want to calculate the angle for our Right hand’s bicep curl, we would require the joints of shoulder, elbow and wrist
-which are 12, 14 and 16 respectively
+which are 12, 14 and 16 respectively.
 
 ![image](https://user-images.githubusercontent.com/93571457/198642427-f4783e82-e8e5-4958-909b-ebc46a0d1968.png)
 
 ### - Calculating Angles 
 First we get the coordinates of the threejoints which we require to get the angle calculated. Then we can calculate
-the slopes of the joints using NumPy. Angles are calculated in radians which then can be converted into degrees
+the slopes of the joints using NumPy. Angles are calculated in radians which then can be converted into degrees.
 
 ## Reference
 - https://google.github.io/mediapipe/
